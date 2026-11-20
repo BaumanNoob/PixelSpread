@@ -35,7 +35,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        world = FindFirstObjectByType<World>();
+        world = FindAnyObjectByType<World>();
         scaleIndex = Mathf.Max(0, System.Array.IndexOf(Scales, startScale));
         pos = startPosition;
         Apply();
